@@ -29,8 +29,8 @@ The model is built using a fine-tuned Pretrained VGGFace model. The app interfac
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
-    cd YOUR_REPOSITORY_NAME
+    git clone https://github.com/thomiaditya/face-age-classification-web.git
+    cd face-age-classification-web
     ```
 
 2. Install the required packages:
