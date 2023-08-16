@@ -26,10 +26,11 @@ def f1_score(y_true, y_pred):
     f1_score = 2 * (precision * recall) / (precision + recall + epsilon)
     return f1_score
 
-MODEL_URL = "https://github.com/thomiaditya/face-age-classification-web/releases/download/1.0/earnest-wood-70.h5"
+MODEL_URL = f"https://github.com/thomiaditya/face-age-classification-web/releases/download/1.0/{MODEL_NAME}.h5"
 MODEL_PATH = f"{MODEL_NAME}.h5"
 
-@st.cache(allow_output_mutation=True, show_spinner=False)
+# @st.cache(allow_output_mutation=True, show_spinner=False)
+@st.cache_resource
 def load_model():
     if not os.path.exists(MODEL_PATH):
         # If model doesn't exist, download it

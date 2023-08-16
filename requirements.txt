@@ -1,0 +1,4 @@
+streamlit
+tensorflow 
+mtcnn
+opencv-python-headless
