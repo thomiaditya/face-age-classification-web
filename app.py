@@ -88,6 +88,9 @@ st.markdown(
     .viewerBadge_text__1JaDK {
         display: none;
     }
+    .stActionButton {
+        display: none;
+    }
     </style>
     """,
     unsafe_allow_html=True
