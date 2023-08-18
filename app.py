@@ -80,6 +80,13 @@ def predict_image(img):
     predictions = model.predict(img_array)
     return np.argmax(predictions)
 
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 st.title('Face Age Classification menggunakan Fine tuning Pretrained VGGFace model')
 
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
