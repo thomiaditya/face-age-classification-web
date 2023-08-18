@@ -52,7 +52,7 @@ model = load_model()
 placeholder.text(f"Loaded model `{MODEL_NAME}`!")
 
 detector = MTCNN()
-class_names = ['anak-anak', 'dewasa', 'remaja']
+class_names = ['anak-anak (0 - 11 tahun)', 'dewasa (> 25 tahun)', 'remaja (12 - 25 tahun)']
 
 def detect_and_crop_face(img):
     # Convert PIL image to numpy array
